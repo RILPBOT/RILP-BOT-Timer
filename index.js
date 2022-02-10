@@ -1,13 +1,13 @@
 function getRemainingTime() {
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
-    // const regex = window.location.href.match(/https:\/\/timer\.rilp-bot\.tech\/\?(end)=(\d+)/)
+    const regex = window.location.href.match(/https:\/\/timer\.rilp-bot\.tech\/\?(end)=(\d+)/)
 
-    // if (!regex) {
-    //     document.getElementById('ends').innerHTML = 'Invalid Giveaway'
-    //     document.getElementById('date').innerHTML = null
-    //     return
-    // }
+    if (!regex) {
+        document.getElementById('ends').innerHTML = 'Invalid Giveaway'
+        document.getElementById('date').innerHTML = null
+        return
+    }
 
     let [, endString, endTime] = regex
 
