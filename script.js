@@ -40,7 +40,7 @@ function getRemainingTime() {
 	console.log(date)
 
     document.getElementById('ends').innerHTML = `${roundTowardsZero(milliseconds / 86400000)}d ${roundTowardsZero(milliseconds / 3600000) % 24}h ${roundTowardsZero(milliseconds / 60000) % 60}m ${roundTowardsZero(milliseconds / 1000) % 60}s remaining`
-    document.getElementById('date').innerHTML = `This giveaway will end the <b>${date}</b> UTC.`
+    document.getElementById('date').innerHTML = `This giveaway will end on <b>${date}</b> UTC.`
 
     function getOrdinalNum(n) {
         return n + (n > 0 ? ['th', 'st', 'nd', 'rd'][(n > 3 && n < 21) || n % 10 > 3 ? 0 : n % 10] : '')
