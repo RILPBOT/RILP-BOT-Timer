@@ -35,3 +35,12 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
+.darkarea_ads {
+    height: 5rem;
+    text-align: center;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 40px;
+}
